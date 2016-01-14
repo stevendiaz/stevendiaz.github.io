@@ -6,13 +6,13 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: 
+title: Home
 email: stevendiaz@utexas.edu
 description: > # this means to ignore newlines until "baseurl:"
   My projects live on my Github page. If you want to contact me,
   feel free to hit me up on twitter drop me an email. 
 #baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://stevendiaz.github.io" # the base hostname & protocol for your site
+url: "http://stevendiaz.net" # the base hostname & protocol for your site
 twitter_username: downloadSteven
 github_username:  stevendiaz
 linkedin_username: steven-diaz
