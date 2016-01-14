@@ -167,9 +167,9 @@
  */
 @charset "utf-8";
 
-@import "bourbon";
-@import "base";
-@import "neat";
+@import "bourbon/bourbon";
+//@import "base";
+@import "neat/neat";
 @import "prettify";
 
 $base-color: #C05D5F;
