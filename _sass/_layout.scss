@@ -346,14 +346,14 @@ html, body {
 }
 
 .row-table {
-  @include row(table);
+  //@include row(table);
 }
 
 .full-width-table {
-  @include media($desktop) {
+  //@include media($desktop) {
     @include fill-parent();
-    @include row(table);
-  }
+    //@include row(table);
+  //}
   // display: block;
 
 }
@@ -377,12 +377,12 @@ html, body {
     @include span-columns(4);
   }
 
-  @include reset-display;
+  //@include reset-display;
 }
 
 
 .reset-disp {
-  @include reset-display;
+  //@include reset-display;
 }
 
 .placeholder-box {
@@ -397,10 +397,10 @@ html, body {
   }
 }
 
-@include reset-display;
+//@include reset-display;
 
 .reset {
-  @include reset-display;
+  //@include reset-display;
 }
 .accent {
   color: $base-color;
@@ -447,7 +447,7 @@ html, body {
 }
 
 .lg-button {
-  @include reset-display;
+  //@include reset-display;
   @include media($desktop) {
     @include span-columns(4);
     @include shift(4);
@@ -467,8 +467,8 @@ html, body {
 }
 
 .project-items {
-  @include fill-parent();
-  @include row(table);
+  //@include fill-parent();
+  //@include row(table);
   position: relative;
   list-style: none;
   max-width: 100%;
@@ -586,11 +586,11 @@ button:focus {outline:0;}
   @include span-columns(12);
   text-align: center;
   display: none;
-  @include media($desktop) {
-    @include reset-display;
+  //@include media($desktop) {
+    //@include reset-display;
     @include span-columns(6);
     text-align: right;
-  }
+  //}
 }
 
 .footer-navigation {
