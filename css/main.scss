@@ -7,8 +7,11 @@ layout: null
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import "post";
-@import
-        "base",
-        "layout",
-        "syntax-highlighting";
+@import "base";
+@import "layout";
+@import "syntax-highlighting";
+//@import
+//        "base",
+//        "layout",
+//        "syntax-highlighting";
 
