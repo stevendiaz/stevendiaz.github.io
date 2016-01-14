@@ -9,9 +9,8 @@
 title: 
 email: stevendiaz@utexas.edu
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  My projects live on my Github page. If you want to contact me,
+  feel free to hit me up on twitter drop me an email. 
 #baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://stevendiaz.github.io" # the base hostname & protocol for your site
 twitter_username: downloadSteven
