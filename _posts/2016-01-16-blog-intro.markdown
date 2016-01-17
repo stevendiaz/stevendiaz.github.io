@@ -1,8 +1,7 @@
 ---
 layout: post
 title:  "Goals of this blog and the semester ahead"
-date:   2016-01-16 10:44:33 -0600
-categories: college
+date:   2016-01-16 8:44:33 -0600
 ---
 
 ### Goals of this blog
