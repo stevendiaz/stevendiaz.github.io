@@ -10,7 +10,7 @@ title: Home
 email: stevendiaz@utexas.edu
 description: > # this means to ignore newlines until "baseurl:"
   My projects live on my Github page. If you want to contact me,
-  feel free to hit me up on twitter drop me an email. 
+  feel free to hit me up on twitter or drop me an email. 
 #baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://stevendiaz.net" # the base hostname & protocol for your site
 twitter_username: downloadSteven
