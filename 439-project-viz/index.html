@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Direct Energy Small Business Enrollment Dashboard</title>
+    <title>OS Project Visualization</title>
     <link rel="stylesheet" type="text/css" href="assets/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/keen-dashboards.css" />
     <link rel="stylesheet" type="text/css" href="stylesheets/CalendarControl.css" />
@@ -17,7 +17,7 @@
                         </a>
                     </li>
                     <li>
-                        <a class="navbar-brand" href="./">Dashboard</a>
+                        <a class="navbar-brand" href="./">Struggle Bus Dashboard</a>
                     </li>
                 </ul>
             </div>
@@ -26,102 +26,29 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-8">
+
+            <div class="col-sm-8">
                 <div class="chart-wrapper">
                     <div class="chart-title">
-                        Enrollments by vendor
+                        Project 0
                     </div>
                     <div class="chart-stage" id="chart-01">
                     </div>
                     <div class="chart-notes">
-                        A view of all enrollments over time
+                        Time spent per day
                     </div>
                 </div>
+            </div>
+
+            <div class="col-sm-4">
                 <div class="chart-wrapper">
                     <div class="chart-title">
-                        <div class="row">
-                            <form id="query-builder"></form>
-
-                            <label for="time-frame">Time Frame:</label>
-                            <select id="timelist" form="query-builder" onchange="selectlist()">
-                                <option>Minutely</option>
-                                <option>Hourly</option>
-                                <option>Daily</option>
-                                <option>Weekly</option>
-                                <option>Monthly</option>
-                                <option>Yearly</option>
-                            </select>
-
-
-                            <label class="control-label" for="todays-date">Start Date:</label>
-                            <input class="input-xlarge" id="start-date" form="query-builder" name="todays_date" size="8" type="text" onfocus="showCalendarControl(this);">
-
-
-                            <label for="todays-date">End Date:</label>
-                            <input id="end-date" form="query-builder" name="todays_date" onfocus="showCalendarControl(this);" size="8" type="text">
-
-                            <label for="status">Status:</label>
-                            <select id="enrollmentlist" form="query-builder" onchange="selectStatus()">
-                                <option>None</option>
-                                <option>Enrolled</option>
-                                <option>Non-enrolled</option>
-                            </select>
-
-
-                            <button class="btn btn-primary" type="submit" form="query-builder" value="Submit" onclick="submitForm()">Generate Graph</button>
-
-                        </div>
+                        Driver percentage 
                     </div>
-                    <div class="chart-stage" id="chart-03">
+                    <div class="chart-stage" id="state-chart">
                     </div>
                     <div class="chart-notes">
-                        Dynamic chart based on selected criteria
-                    </div>
-                </div>                
-            </div>
-            <div class="col-md-4">
-                <div class="row">
-                    <div class="chart-wrapper col-md-6">
-                        <div class="chart-title">
-                            Channel
-                        </div>
-                        <div class="chart-stage" id="channel-chart">
-                        </div>
-                        <div class="chart-notes">
-                            Enrollments by Journey (Web, FieldSales, Broker)
-                        </div>
-                    </div>
-                    <div class="chart-wrapper col-md-6">
-                        <div class="chart-title">
-                            Vendor
-                        </div>
-                        <div class="chart-stage" id="vendor-chart">
-                        </div>
-                        <div class="chart-notes">
-                            List of enrollments by Vendor Name
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="chart-wrapper col-md-6">
-                        <div class="chart-title">
-                            Percent Renewals
-                        </div>
-                        <div class="chart-stage" id="status-chart">
-                        </div>
-                        <div class="chart-notes">
-                            Quantity of enrollments for existing customers
-                        </div>
-                    </div>
-                    <div class="chart-wrapper col-md-6">
-                        <div class="chart-title">
-                            State
-                        </div>
-                        <div class="chart-stage" id="state-chart">
-                        </div>
-                        <div class="chart-notes">
-                            Enrollments by State
-                        </div>
+                        Percent of time spent in drivers seat
                     </div>
                 </div>
             </div>
