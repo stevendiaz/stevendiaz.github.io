@@ -15,12 +15,33 @@ Keen.ready(function(){
     timezone: "UTC"
   });
   
-  client.draw(query, document.getElementById("my_chart"), {
+  client.draw(query, document.getElementById("chart-01"), {
     chartType: "columnchart",
     title: "Test",
     chartOptions: {
       isStacked: true
     }
+  });
+
+  var driver_percent = new Keen.Query("count", {
+    eventCollection: "project0",
+    groupBy: "time"
+  });
+
+  client.draw(driver_percent, document.getElementById("state-chart"), {
+       chartType: "piechart",
+       title: false,
+       height: "auto",
+       width: "auto",
+       chartOptions: {
+         chartArea: {
+           height: "85%",
+           left: "5%",
+           top: "5%",
+           width: "100%"
+         },
+         pieHole: .4
+       }
   });
   
 });
