@@ -5,27 +5,35 @@ var client = new Keen({
 });
 Keen.ready(function(){
   
-  var query = new Keen.Query("count", {
+  var query = new Keen.Query("sum", {
     eventCollection: "project0",
-    groupBy: [
-    "total_minutes"
-],
     interval: "daily",
-    timeframe: "this_14_days",
-    timezone: "UTC"
+    targetProperty: "time",
+    timeframe: {
+    "end": "2016-02-13T00:00:00.000+00:00",
+    "start": "2016-01-31T00:00:00.000+00:00"
+}
   });
   
   client.draw(query, document.getElementById("chart-01"), {
     chartType: "columnchart",
-    title: "Test",
+    title: "Time",
     chartOptions: {
       isStacked: true
     }
   });
 
-  var driver_percent = new Keen.Query("count", {
+
+  var driver_percent = new Keen.Query("sum", {
     eventCollection: "project0",
-    groupBy: "time"
+    groupBy: [
+    "developer"
+],
+    targetProperty: "time",
+    timeframe: {
+    "end": "2016-02-13T00:00:00.000+00:00",
+    "start": "2016-01-31T00:00:00.000+00:00"
+}
   });
 
   client.draw(driver_percent, document.getElementById("state-chart"), {
@@ -39,8 +47,7 @@ Keen.ready(function(){
            left: "5%",
            top: "5%",
            width: "100%"
-         },
-         pieHole: .4
+         }
        }
   });
   
