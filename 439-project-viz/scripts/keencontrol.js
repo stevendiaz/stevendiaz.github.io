@@ -50,32 +50,56 @@ Keen.ready(function(){
          }
        }
   });
+
+  var project1_column = new Keen.Query("sum", {
+    eventCollection: "project1",
+    interval: "daily",
+    targetProperty: "time",
+    timeframe: {
+    "end": "2016-02-27T00:00:00.000+00:00",
+    "start": "2016-02-12T00:00:00.000+00:00"
+}
+  });
+  
+  client.draw(project1_column, document.getElementById("chart-02"), {
+    // Custom configuration here
+    chartType: "columnchart",
+    title: "Time",
+    chartOptions: {
+      isStacked: true
+    }
+  });
+
+  var project1_pie = new Keen.Query("sum", {
+    eventCollection: "project1",
+    groupBy: [
+    "developer"
+],
+    targetProperty: "time",
+    timeframe: {
+    "end": "2016-02-27T00:00:00.000+00:00",
+    "start": "2016-02-12T00:00:00.000+00:00"
+}
+  });
+  
+  client.draw(project1_pie, document.getElementById("p1-pie"), {
+    // Custom configuration here
+     chartType: "piechart",
+     title: false,
+     height: "auto",
+     width: "auto",
+     chartOptions: {
+       chartArea: {
+         height: "85%",
+         left: "5%",
+         top: "5%",
+         width: "100%"
+       }
+     }
+  })
   
 });
 
-  // var state_chart = new Keen.Query("count", {
-  //   eventCollection: "enrollments",
-  //   groupBy: "BillingAddress.State",
-  //   timeframe: {
-  //     start: "2014-05-01T00:00:00.000Z",
-  //     end: "2015-07-22T00:00:00.000Z"
-  //   }
-  // });
-  // client.draw(state_chart, document.getElementById("state-chart"), {
-  //   chartType: "piechart",
-  //   title: false,
-  //   height: "auto",
-  //   width: "auto",
-  //   chartOptions: {
-  //     chartArea: {
-  //       height: "85%",
-  //       left: "5%",
-  //       top: "5%",
-  //       width: "100%"
-  //     },
-  //     pieHole: .4
-  //   }
-  // });
 
 function submitForm() {
   var vendor = document.getElementById("vendor-input").value;
