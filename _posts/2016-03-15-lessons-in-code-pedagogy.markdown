@@ -5,7 +5,7 @@ date:   2016-03-15 10:44:33 -0600
 categories: test
 --- 
 
-I wasn't ever exposed to programming until I was a sophomore in high school, but even then, the Computer Science class wasn't ever taken seriously. It was seen as a blow off (imagine that) and the small UIL Computer Science team that was formed was never given the exposure it deserves. But I soon realized that even _I_ was lucky to have gone to a high school with even a basic programming class. I've learned that it's an excellent outlet for creation and building logical 
+I wasn't ever exposed to programming until I was a sophomore in high school, but even then, the Computer Science class wasn't ever taken seriously. It was seen as a blow off (imagine that) and the small UIL Computer Science team that was formed was never given the exposure it deserves. But I soon realized that even _I_ was lucky to have gone to a high school with even a basic programming class. I've learned that it's an excellent outlet for creation and building logical fundamentals. 
 
 When I came into my position as the Service Chair for Texas LAN, I knew that STEM outreach was something that I wanted to implement, but I didn't really know what that entailed. After some poking around in Google and following suggestions from friends, I heard of an organization called Coderdojo, I offered to help get CS students to volunteer on sundays. 
 Soon, I was at CoderDojo every weekend I could. I began to learn some amazing things about how kids learn and how social barriers can prevent us from reaching out and exploring topics we might have interest in. 
