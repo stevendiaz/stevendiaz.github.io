@@ -1,0 +1,98 @@
+---
+layout: post
+title:  "Learning REST: A week long interview project"
+date:   2016-01-14 10:44:33 -0600
+categories: test
+---
+
+## The assignment:
+
+The task at hand is to create a REST API with support for CRUD
+(create, read, update, delete). This needs to work for arbitrary JSON objects,
+where each entry has a unique identifier.
+
+## Base knowledge before starting this project
+
+Before starting this, having just read the assignment description, I am left
+with these questions:
+
+1. What is a REST API? (yes, I first need to know what I'm building before
+I build it).
+
+2. Given this new knowledge of a REST API, what tools/tech stack am I going to
+use to build it and how do I choose?
+
+3. How do I evaluate the performance/quality of a REST API?
+
+4. What do the HTTP Requests POST/PUT/GET/DELETE do and how do we test if they
+are correct?
+
+So, I actually didn't know ANYTHING about REST APIs until I started this
+project. This is actually the best part! I get the opportunity to learn something
+new. This involves learning both the concepts behind REST APIs and how to build them.
+The learning + building combo is the best exercise in understanding something new.
+
+## Choosing the stack
+
+Using Google as my guiding light, I came across dispatch(add link).
+This caught my attention because it had explicit documentation on the
+HTTP methods that were defined in the assignment. Explicit documentation
+is crucial in this assignment because of the time constraint and my lack of
+familiarity with the technologies.
+
+
+## Road bumps & how I solved them
+After choosing the tools I was going to use and reading through the required docs,
+I started writing some code. When trying to deploy my server using
+`node server.js`
+
+I would get an error. The call stack looked like so..
+`/Users/stevendiaz/Sandbox/toy-rest-api/node_modules/bluebird/js/main/async.js:43
+        fn = function () { throw arg; };
+                           ^
+ReqlOpFailedError: Table `test.cruds` already exists in:
+r.db("test").tableCreate("cruds")
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    at ReqlOpFailedError.ReqlError [as constructor] (/Users/stevendiaz/Sandbox/toy-rest-api/node_modules/rethinkdb/errors.js:23:13)
+    at ReqlOpFailedError.ReqlRuntimeError [as constructor] (/Users/stevendiaz/Sandbox/toy-rest-api/node_modules/rethinkdb/errors.js:90:51)
+    at ReqlOpFailedError.ReqlAvailabilityError [as constructor] (/Users/stevendiaz/Sandbox/toy-rest-api/node_modules/rethinkdb/errors.js:167:56)
+    at new ReqlOpFailedError (/Users/stevendiaz/Sandbox/toy-rest-api/node_modules/rethinkdb/errors.js:178:52)
+    at mkErr (/Users/stevendiaz/Sandbox/toy-rest-api/node_modules/rethinkdb/util.js:177:10)
+    at TcpConnection.Connection._processResponse (/Users/stevendiaz/Sandbox/toy-rest-api/node_modules/rethinkdb/net.js:152:16)
+    at TcpConnection.Connection._data (/Users/stevendiaz/Sandbox/toy-rest-api/node_modules/rethinkdb/net.js:122:12)
+    at Socket.<anonymous> (/Users/stevendiaz/Sandbox/toy-rest-api/node_modules/rethinkdb/net.js:683:32)
+    at emitOne (events.js:90:13)
+    at Socket.emit (events.js:182:7)
+    at readableAddChunk (_stream_readable.js:153:18)
+    at Socket.Readable.push (_stream_readable.js:111:10)
+    at TCP.onread (net.js:531:20)`
+
+Hmmm. Well, I thought I had handled the case where the table already exists?
+Let's just handle this the same way we handled the other exception.
+We add
+`else if(err.name === "ReqlOpFailedError")
+  console.log("Table already exists. Skipping creation.);`
+into our error handling.
+
+Now let's try again:
+$ curl -X POST -H "Content-Type: application/json" -d '{"title":"Hey, I'm using crud_ws", "slides": [{"1":"test"}, {"2": "Another test"}]}' http://localhost:3000/cruds
+$ {"foo":"bar"}
+$ created!
+
+Success! Now we need to focus on getting the correct format to output. 
+## Reflection & final product
+
+
+## What I need
+A node.js server
+Redis as the database
+ReThinkDB, gives us NoSQL JSON Document Store database
+
+Use cURL to send POST requests
+use HTTP dispatcher, acts as the event handler
+stick the UID into the table
+print the body
+
+To post:
+Generate UUID w. Node and post it to the database
+must return JSON with UUID
