@@ -11,6 +11,9 @@ The task at hand is to create a REST API with support for CRUD
 (create, read, update, delete) functionality. This needs to work for arbitrary JSON objects,
 where each entry has a unique identifier.
 
+You can find the code
+[here](https://github.com/stevendiaz/node-rethinkdb-rest-api).
+
 ## Base knowledge before starting this project
 
 Before starting this, having just read the assignment description, I am left
