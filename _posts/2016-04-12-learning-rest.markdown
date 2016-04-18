@@ -44,7 +44,7 @@ to start by picking the language I'm going to write this in. After I have this, 
 of node.js before, so why not?  
 
 #### What database?
-Using Google as my guiding light, I came across RethinkDB(add link) because it had two qualities:
+Using Google as my guiding light, I came across RethinkDB because it had two qualities:
 
 1. It was compatible with node.js
 
