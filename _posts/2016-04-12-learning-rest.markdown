@@ -65,7 +65,7 @@ I would get an error, which returned this..
 ![](/images/reqopfailed.png "So sad")
 
 
-Hmmm. Well, I thought I had handled the case where the table already exists?
+Hmm. Well, I thought I had handled the case where the table already exists?
 Let's just handle this the same way we handled the other exception.
 We add a check for this into our error handling.
 
