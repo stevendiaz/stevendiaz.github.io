@@ -12,4 +12,4 @@ I previously served as the Service Chair, where I worked with CoderDojo in [Roun
 
 
 Last summer I was a Software Development Intern at [Direct Energy](https://www.directenergy.com).
-I'm currently a Software Engineer Intern at [Nokia](https://www.nokia.com)
+I'm currently a Software Engineer Intern at [Nokia](https://www.nokia.com).
