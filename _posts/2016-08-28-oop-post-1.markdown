@@ -1,0 +1,45 @@
+---
+layout: post
+title:  "CS371p: Week 1"
+date:   2016-08-28 11:59:59 -0600
+---
+
+### What did you do this past week?
+
+This first week I gave myself an overview of the tools we're going to be using
+this semester. With each new tool, I asked myself questions. Questions like...
+
+1. What does this tool do?
+2. How can it help me write better code?
+3. How can I integrate this into my own development for work and personal projects?
+
+I've used Git and Github extensively for side projects so I've become familiar
+with the basics, although I'd love to learn some 'best practices' and potentially
+correct some bad techniques.
+
+Thankfully, I've had a blog running with the exact stack that Downing specified.
+I spent quite a few hours over the past winter break customizing a Github Pages
++ Jekyll blog, which was quite a pain but turned out to be worth it. This will
+also explain why I have some past blog posts about my thoughts on the department
+OS class and my experience with teaching kids code.
+
+### What's in your way?
+
+The firehose has been opened. New language, new tools, and new readings will be
+more than enough to keep me busy.
+
+### What will you do next week?
+
+Next week I'm hoping to dive into the first project. As with any project, this
+means reading the docs, getting familiar with the toolkit, and dissecting the
+problem. There's always a learning curve that comes with setting up a new
+development environment and I'm hoping my familiarity and conceptual understanding
+of some of the tools will help me get over the curve quickly.
+
+### Tip of the Week
+
+I've found that setting some time to understand the concepts and mechanics behind
+git will save a lot of future Google time. I was stuck in a pattern of just searching
+the specific "thing" I wanted to do or undo instead of trying to understand what I
+did wrong. I suggest that you find some quick higher-level tutorials of Git (assuming
+  you've already got the basics down) to get some understanding of source control.
