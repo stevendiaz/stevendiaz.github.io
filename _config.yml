@@ -16,6 +16,7 @@ url: "http://stevendiaz.net" # the base hostname & protocol for your site
 twitter_username: downloadSteven
 github_username:  stevendiaz
 linkedin_username: steven-diaz
+google analytics: UA-65559692-1
 gems: [neat, bourbon, base]
 
 # Build settings
