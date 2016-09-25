@@ -10,6 +10,6 @@ I'm all about building cool things, meeting new people, and solving interesting 
 Outside of class I organize social events as the Social Chair for [Texas LAN](http://texaslan.org).
 I previously served as the Service Chair, where I worked with CoderDojo in [Round Rock](http://coderdojorr.weebly.com/).
 
-The past two summers I've worked at [Direct Energy](https://www.directenergy.com) and [Nokia](https://www.nokia.com).
-I'm currently a Backend Developer for [Gitty Inc.](https://gitty.xyz).
+The past two summers I've worked as an intern for [Direct Energy](https://www.directenergy.com) and [Nokia](https://www.nokia.com).
+I'm currently a Software Engineer for [Gitty Inc.](https://gitty.xyz).
 
