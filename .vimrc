@@ -17,13 +17,13 @@ let NERDTreeShowBookmarks=1
 map <F3> :NERDTreeToggle<CR>
 
 " Python specific
-  set list listchars=tab:▷⋅,trail:⋅,nbsp:⋅
-  set statusline=%F%m%r%h%w\ [TYPE=%Y\ %{&ff}]\
-  \ [%l/%L\ (%p%%)
-  filetype plugin indent on
-  au FileType py set autoindent
-  au FileType py set smartindent
-  au FileType py set textwidth=79 " PEP-8 Friendly
+set list listchars=tab:▷⋅,trail:⋅,nbsp:⋅
+set statusline=%F%m%r%h%w\ [TYPE=%Y\ %{&ff}]\
+\ [%l/%L\ (%p%%)
+filetype plugin indent on
+au FileType py set autoindent
+au FileType py set smartindent
+au FileType py set textwidth=79 " PEP-8 Friendly
 
 " Tabs
 set tabstop=4
