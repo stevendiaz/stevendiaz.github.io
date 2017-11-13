@@ -1,23 +1,103 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="A timeline of projects, blog posts, talks, and more">
+    <meta name="author" content="Steven Diaz">
 
-<div class="home">
+    <title>Steven Diaz</title>
 
-  <h1 class="page-heading">Posts</h1>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <!-- Custom styles for this template -->
+    <link href="css/jumbotron-narrow.css" rel="stylesheet">
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+  </head>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <body>
 
-</div>
+      <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation"><a href="./bio.html">About</a></li>
+            <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">More<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+                <li><a href="https://www.twitter.com/downloadSteven">Twitter</a></li>              
+                <li><a href="https://www.linkedin.com/in/downloadsteven">LinkedIn</a></li>                
+                <li><a href="https://www.github.com/stevendiaz">GitHub</a></li>
+            </ul>
+            </li>            
+          </ul>
+        </nav>
+        <h3 class="text-muted">Steven Diaz</h3>
+      </div>
+
+      <div class="row marketing">
+        <div class="col-lg-12">
+	<p> Hi, I'm Steven 👋. I'm a fourth year computer science major at the University of Texas (hook 'em 🤘). 
+	I value <b>focus</b>, <b>empathy</b>, and <b>communication</b> and believe these three principles are the key to building successful teams.
+	</p>
+	<p> Although I'm a <b>backend programmer</b> by trade, my interests include automotive technology 🚗  and educational technology 📝 . I'm also taking a virtualization course where I've discovered an interest in building containers and working with virtual machines.  
+        </div>
+      </div>
+
+      <div class="row marketing">
+        <div class="col-lg-12">
+          <h1><i>"So, what have you been working on?"</i></h1>
+        </div>
+      </div>
+
+      <div class="row marketing">
+        <div class="col-lg-12">
+          <h3>Fall 2017: Engineering Intern, SchooLinks</h3>
+            <h4>Ongoing:</h4>
+            <p><ul>
+              <li>The last couple of weeks have been spent adding features to college search page, helping students better find universities suited for them. Currently helping build a React Native mobile app, which will help us onboard over 50,000 students onto our platform. </li> 
+            </ul></p>
+
+            <h3>Summer 2017: Software Engineer Intern, Braintree</h3>
+            <p><ul>
+              <li>Headed west for San Francisco and joined the Wallet Payments team working on Braintree's Apple Pay, Android Pay and other digital wallet integrations.</li> 
+            </ul></p>
+            <p><ul>
+              <li>Worked alongside some very talented individuals sunsetting our Coinbase integration, collaborating with teams at Uber to help reduce their transaction decline rates and platform maintenced..</li> 
+            </ul></p>
+
+            <h3>Junior Year: Software Engineer, Gitty, Inc.</h3>
+            <p><ul>
+              <li>Took on the challenge of working part time as a full time student and joined an early stage startup birthed out of a need to help recruiters find the best talent in the software engineering world. Wrote the backend service for Gitty's mobile app and helped breakout some of the business logic into the REST API. After a small pivot, I was a key influencer in the database schema design and early implementation of  Gitty's web app.</li> 
+            </ul></p>
+
+            <h3>Summer 2016: Co-founder, TeacherDrawer</h3>
+            <p><ul>
+              <li>My first tango with building something from the ground up. I spent the first couple of weeks of my summer huddled in coffee shops pouring over Flask books and sketching out our database relationships. Over the summer, it turned into a minimum viable product that was in the hands of some early adopters in the education industry. It was rewarding to build something that can benefit those working to educate the minds of the next generation. </li> 
+            </ul></p>
+
+            <h2>Previous Internships...<h2>
+            <h4>Summer 2016: Nokia</h4>
+            <h4>Summer 2015: Direct Energy</h4>
+            <p>
+        </div> 
+      </div>
+
+    <footer>Need to contact me? My <a href="https://twitter.com/downloadSteven">Twitter DMs</a> are open</footer>
+
+    </div> <!-- /container -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
